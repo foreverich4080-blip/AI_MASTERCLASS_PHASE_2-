@@ -11,7 +11,7 @@ import os
 load_dotenv()
 
 api_key = os.getenv("OPENWEATHER_API_KEY")
-city = 'Nairobi'
+city = 'Machakos'
 
 url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
 response = requests.get(url)
